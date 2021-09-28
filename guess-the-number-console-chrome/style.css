@@ -1,0 +1,35 @@
+ @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap');
+
+body, body * {
+    margin : 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-color: cadetblue;
+    min-height: 100vh;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 120px;
+}
+
+p span {
+     font-family: 'Stick No Bills', sans-serif;
+     display: block;
+     background-color: rgb(217, 255, 0);
+     border: solid black;
+     padding: 16px;
+     border-radius: 30px;
+     
+}
