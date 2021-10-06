@@ -5,20 +5,30 @@ console.log('Use "submit(x) to submit a number.')
 const mysteryNumber = Math.round(Math.random() * 100)
 
 const submit = (x) => {
-    if (x < mysteryNumber) {
+
+    x = parseFloat (x)
+
+    if (Number.isNaN(x)) {
+        console.log('Wrong input, please give a number')
+        document.body.innerHTML ='<h1 class="bounce">⚠️</h1>'
+        document.body.style.backgroundColor ='red'
+
+    } else if (x < 0 || x > 100) {
+        console.log('Number should  be between 0 and 100')
+        document.body.innerHTML ='<h1>Number should be between 0 and 100</h1>'
+        document.body.style.backgroundColor ='#FFE6AB'
+
+    } else if (x < mysteryNumber) {
         console.log('Too small :).')
         document.body.style.backgroundColor ='#25ff40'
         document.body.innerHTML ='<h1>Too small</h1>'
 
-    }
-    if (x > mysteryNumber) {
+    } else if (x > mysteryNumber) {
             console.log('Too big :)')
             document.body.style.backgroundColor ='#ff1818'
             document.body.innerHTML ='<h1>Too big</h1>'
 
-    }
-
-    if (x == mysteryNumber) {
+    } else if (x == mysteryNumber) {
                 console.log('Congratulations !')
                 document.body.style.backgroundColor ='#ffe007'
                 document.body.innerHTML ='<h1>Bravo</h1>'

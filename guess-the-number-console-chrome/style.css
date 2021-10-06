@@ -27,7 +27,7 @@ h1{
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif;
     font-size: 30px;
     display: block;
     background-color: rgb(255, 255, 255);
@@ -40,9 +40,23 @@ p span {
      font-family: 'Stick No Bills', sans-serif;
      font-size: 25px;
      display: block;
-     background-color: rgb(217, 255, 0);
-     border: solid black;
+     background-color: rgb(230, 255, 87);
+     border: solid rgba(171, 190, 0, 0.637);
      padding: 16px;
      border-radius: 30px;
      
 }
+
+.bounce {
+    animation: bounce-anim 1.5s cubic-bezier(0.31, 1.56, 0.23, 0.99);
+  }
+  
+  @keyframes bounce-anim {
+    from {
+      transform: rotate(-90deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
