@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body, body * {
     margin : 0;
@@ -25,9 +26,19 @@ h1{
     font-size: 120px;
 }
 
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border: solid black;
+    padding: 16px;
+    border-radius: 10px; 
+}
+
 p span {
      font-family: 'Stick No Bills', sans-serif;
-     font-size: 30px;
+     font-size: 25px;
      display: block;
      background-color: rgb(217, 255, 0);
      border: solid black;
