@@ -15,24 +15,25 @@ const submit = (x) => {
 
     } else if (x < 0 || x > 100) {
         console.log('Number should  be between 0 and 100')
-        document.body.innerHTML ='<h1>Number should be between 0 and 100</h1>'
+        document.body.innerHTML = '<h1 class="bounce">Number should be between 0 & 100.</h1>'
         document.body.style.backgroundColor ='#FFE6AB'
 
     } else if (x < mysteryNumber) {
         console.log('Too small :).')
         document.body.style.backgroundColor ='#25ff40'
-        document.body.innerHTML ='<h1>Too small</h1>'
+        document.body.innerHTML = '<h1 class="bounce">Too small.</h1>'
 
+        
     } else if (x > mysteryNumber) {
             console.log('Too big :)')
             document.body.style.backgroundColor ='#ff1818'
-            document.body.innerHTML ='<h1>Too big</h1>'
+            document.body.innerHTML = '<h1 class="bounce">Too big.</h1>'
 
     } else if (x == mysteryNumber) {
                 console.log('Congratulations !')
                 document.body.style.backgroundColor ='#ffe007'
-                document.body.innerHTML ='<h1>Bravo</h1>'
-    }
+                document.body.innerHTML = '<h1 class="bounce">Hurrah!</h1>'
+            }
 }
 
 const cheat =() => {
