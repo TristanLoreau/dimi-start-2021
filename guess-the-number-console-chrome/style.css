@@ -48,7 +48,7 @@ p span {
 }
 
 .bounce {
-    animation: bounce-anim 1.5s cubic-bezier(0.31, 1.56, 0.23, 0.99);
+    animation: bounce-anim 1.4s cubic-bezier(0.31, 1.56, 0.23, 0.99);
   }
   
   @keyframes bounce-anim {
