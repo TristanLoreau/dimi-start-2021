@@ -27,4 +27,38 @@ h1{
 }
 h2{
   font-size: 70px;
+  text-decoration: underline 4px;
+}
+
+input{
+  height: 35px;
+  background-color: rgb(255, 229, 181);
+  border: solid black;
+  border-width: 4px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+div.response {
+   display: flex;
+   background-color: rgb(169, 224, 226);
+   align-items: center;
+   text-align: center;
+   border: solid 1px rgb(58, 85, 95);
+   border-width: 3px;
+   border-radius: 4px;
+   margin-top: 8px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 15px;
+}
+
+div.response span.input{
+   padding: 8px;
+}
+
+div.response span.comment{
+   font-style: italic;
 }
