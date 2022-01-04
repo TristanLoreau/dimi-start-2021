@@ -40,14 +40,16 @@ input{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 div.response {
    display: flex;
-   background-color: rgb(169, 224, 226);
+   background-color: rgb(237, 250, 178);
    align-items: center;
    text-align: center;
-   border: solid 1px rgb(58, 85, 95);
+   border: solid 1px rgb(39, 39, 39);
    border-width: 3px;
    border-radius: 4px;
    margin-top: 8px;
@@ -62,3 +64,17 @@ div.response span.input{
 div.response span.comment{
    font-style: italic;
 }
+
+.bounce {
+   animation: bounce 1s .5s infinite;
+   transform: scale(0.85);
+ }
+ 
+ @keyframes bounce {
+   0% { transform: scale(1.1);}
+   50% { transform: scale(1.6);}
+   60% { transform: scale(0.6);}
+   80% { transform: scale(0.95) }
+   100% { transform: scale(0.85) }
+ }
+  
